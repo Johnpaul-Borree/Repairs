@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i|Roboto+Slab|Sofia');
+
+body{
+    margin:0;
+    font-family: "Roboto Slabs", sans-serif;
+}
+
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    background-image: url(../Images/bg3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    height: 100vh;
+}
+.home{
+    padding-left: 80px;
+}
+
+.nav-wrap{
+    position: fixed;
+    background-color: #0005;
+    width: 100%;
+}
+
+.navMenu{
+    padding-right: 150px;
+}
+
+.navMenu > div {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+.navMenu > div > a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+nav .blog{
+    margin: 10px;
+    font-family: "Sofia",sans-serif;
+}
+
+nav .blog:hover a:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(0, 211, 175);
+    color: aquamarine;
+}
+
+nav .signin{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+    line-height: 30px;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(0, 211, 175);
+    border: 2px solid rgb(0, 211, 175);
+    margin: 10px;
+}
+
+nav .signin:hover{
+    background-color: rgb(114,133,165);
+    border: 2px solid rgb(114,133,165);
+    cursor: pointer;
+}
+
+nav .signin a:hover{
+    color: rgb(0, 211, 175);
+}
+
+nav .signup{
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+    line-height: 30px;
+    height: 30px;
+    width: 150px;
+    border: 2px solid rgb(0, 211, 175);
+}
+
+nav .signup:hover{
+    background-color: rgb(0, 211, 175);
+    cursor: pointer;
+}
+
+#menu-icon{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 5%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: none;
+
+}
+#menu-icon span{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background: #000000;
+    border-radius: 9px;
+    left: 2%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#menu-icon span:nth-child(1) {
+    top: 22px;
+  }
+  
+  #menu-icon span:nth-child(2),#menu-icon span:nth-child(3) {
+    top: 32px;
+  }
+  
+  #menu-icon span:nth-child(4) {
+    top: 42px;
+  }
+
+  #menu-icon.open span:nth-child(1){
+      top: 32px;
+      width: 0%;
+      left: 50%;
+  }
+
+  #menu-icon.open span:nth-child(2){
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+
+  #menu-icon.open span:nth-child(3){
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #menu-icon.open span:nth-child(4){
+      top:32px;
+      width:0%;
+      left:50%
+  }
+
+.heading{
+    font-size: 2em;
+    font-family: "Sofia", sans-serif;
+    color: rgba(0,211,175, 0.8);
+    text-shadow: 2px 2px;
+    text-align: center;
+    
+}
+
+.description{
+    text-align: center;
+    font-size: 1.6em;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffffff;
+    width: 80%;
+}
+
+main > button{
+    padding: 2px;
+    width: 25rem;
+    text-align: center;
+    background-color: rgb(0, 211, 175);
+    color: #ffffff; 
+    font-size: 16px;
+    line-height: 1.2em;
+    border: 1px solid rgb(0, 211, 175);
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+main > button:hover{
+    background-color: rgb(114,133,165);
+    color: rgb(0, 211, 175);
+    border: none;
+    cursor: pointer;
+}
+
+/* javascript will take care of the hover effect. */
+
+main > button > p > i{
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 20px;
+    
+}
+.arrow{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+}
