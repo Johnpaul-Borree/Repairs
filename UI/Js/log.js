@@ -20,14 +20,14 @@ document.querySelector('.nav-wrap').addEventListener('mouseout', hideNav);
 function expandNav() {
 
     document.getElementById('expand').style.display = "block";
-    document.querySelector('#signup-form').style.cssText = 'width:55%; transition:all 1s ease-in-out;';
+    document.querySelector('#login-form').style.cssText = 'width:55%; transition:all 1s ease-in-out;';
     document.getElementById('expand').style.display = "none";
     document.getElementById('collapse').style.display = "block";
 }
 
 function collapseNav() {
 
-    document.querySelector('#signup-form').style.cssText = 'width:100%; transition:all 1s ease-in-out;';
+    document.querySelector('#login-form').style.cssText = 'width:100%; transition:all 1s ease-in-out;';
     document.getElementById('collapse').style.display = "none";
     document.getElementById('expand').style.display = "block";
 

@@ -1,0 +1,219 @@
+
+@import url('basic.css');
+@import url('style.css');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: "Roboto Slabs", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    background-image: none;
+}
+
+.signWrap{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 8fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-wrap{
+    position: relative;
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.navMenu{
+    display: none;
+}
+
+.form{
+    grid-column: 1/-1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+#signup-form{
+    position: absolute;
+    left: 25%;
+    top: 6%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: inset 4px -4px 1px rgba(255,255,255,0.1);
+    
+}
+
+#signup-form > .heading{
+    font-size: 1.5em;
+    color: rgba(59, 2, 2, 0.667);
+}
+
+#signup-form > .signin{
+    font-size: 1.2em;
+    text-align: center;
+    color: #0008;
+}
+
+#signup-form > .signin a{
+    text-decoration: none;
+    color: #000;
+}
+
+#signup-form .sform{
+    margin-left: 15%;
+    font-size: 1.8em;
+}
+
+#signup-form > #name,
+#signup-form > #email,
+#signup-form > #username,
+#signup-form > #password,
+#signup-form > #copassword,
+#signup-form > #phone{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 70%;
+    line-height: 6vh;
+    margin-left: 15%;
+    font-size: 1.2em;
+    border: 1px solid#c2c2c2;
+    border-radius:3px;
+    padding-left: 10px;
+    outline: #c2c2c2;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+
+#signup-form > .checkbox{
+    margin-left: 15%;
+    font-size: 1.2em;
+}
+
+.checkbox .checkbox-link{
+    text-decoration: none;
+    color:#69304d;
+}
+
+#signup-form > #submit{
+    width: 40%;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    background: #ff8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #dadada;
+    -webkit-box-shadow: 1px 1px 4px #dadada;
+    -moz-box-shadow: 1px 1px 4px #dadada;
+    border-radius: 3px;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+}
+
+.nav-wrap:hover{
+    background-color: #0005;
+    transition: all 1s ease-in-out;
+
+}
+
+#signup-form > #submit:hover{
+    background-color: #ff6500;
+    cursor: pointer;
+}
+
+#signup-form > .openarr{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 3em;
+    color: #0005;
+    cursor: pointer;
+    display: none
+}
+
+.closearr{
+    position: absolute;
+    top:50%;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 920px) {
+
+.signWrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-wrap{
+    position: relative;
+    left: 55%;
+    width: 45%;
+}
+.navMenu{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+}
+
+.navMenu > div {
+    border-bottom: 2px solid #c2c2c2;
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 90%;
+}
+
+.navMenu > div > a{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.navMenu > .signup{
+    background-color: transparent;
+}
+
+.home img{
+    width: 15vw;
+}
+
+#signup-form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#signup-form > .openarr{
+    font-size: 5vw;
+    display: block;
+}
+
+.closearr{
+    font-size: 5vw;
+}
+
+#signup-form > .heading{
+    font-size: 3vw;
+}
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/form.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="signWrap">
+            <div class="nav-wrap">
+                    <div id="collapse" class="closearr">&gt;</div>
+                    <div class="home"><a href="../index.html"><img src="Images/logo.png" alt="Home"></a></div>
+                    <nav class="navMenu">
+                        <div class="blog"><a href="#Blog">Blog</a></div>
+                        <div class="signin"><a href="login.html">Sign In</a></div>
+                        <div class="signup"><a href="newUser.html">Sign Up</a></div>
+                    </nav>
+                    
+            </div>
+
+            <div class="form">
+
+                <form id="signup-form">
+
+                    <div id="expand" class="openarr">&lt;</div>
+
+                    <div class="heading"><h2>CREATE ACCOUNT </h2></div>
+
+                    <p class="signin">Already a member? <a href="login.html">Sign In here</a></p>
+
+                    <input type="text" id="name" name="name" placeholder="Full Name" required tabindex="1"><br>
+        
+                    <input type="email" id="email" name="email" placeholder="Email Address" required ><br>
+    
+                    <input type="text" id="username" name="username" placeholder="Username" required tabindex="2"><br>
+        
+                    <input type="password" id="password" name="password" placeholder="password" required ><br>
+                    <input type="password" id="copassword" name="password" placeholder="Confirm Password" required><br>
+        
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required><br>
+                    <label class="checkbox">
+                        <input type="checkbox" id="terms-agree" name="terms-agree" required="required" aria-required="true">
+                        <span>I read and agree to the <a href="terms-of-use.html" target="_blank" class="checkbox-link">Terms of Use</a></span>
+                    </label><br>
+                    <input type="submit" class="button" name="submit" id="submit" tabindex="5" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    <script src="Js/script.js"></script>
+    </body>
+</html>
