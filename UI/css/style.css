@@ -129,13 +129,6 @@ footer{
         background-color: transparent;
     }
     
-    nav .signin:hover{
-        background-color: transparent;
-        /* border: inherit; */
-        border: 2px solid #0005;
-        cursor: pointer;
-    }
-    
     nav .signin a:hover{
         color: #000000;
     }
@@ -143,7 +136,7 @@ footer{
     nav .signup{
         margin-top: 10px;
         font-family: 'Roboto Condensed', sans-serif;
-        font-size:20px;
+        font-size:1.1em;
         line-height: 30px;
         height: 30px;
         width: 80%;
